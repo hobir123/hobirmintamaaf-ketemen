@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Mohon Maaf Lahir & Batin</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #0f2027, #2c5364);
+            font-family: Arial, sans-serif;
+            color: white;
+            text-align: center;
+        }
+
+        .container {
+            margin-top: 80px;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 40px;
+            color: gold;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.8;
+        }
+
+        .card {
+            background: rgba(255,255,255,0.1);
+            border-radius: 15px;
+            padding: 25px;
+            margin: 20px auto;
+            width: 80%;
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+        }
+
+        button {
+            padding: 12px 25px;
+            font-size: 18px;
+            border: none;
+            border-radius: 10px;
+            background: gold;
+            color: black;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: orange;
+        }
+
+        .hidden {
+            display: none;
+            margin-top: 20px;
+            font-size: 20px;
+            color: #00ffcc;
+        }
+
+        footer {
+            margin-top: 50px;
+            font-size: 14px;
+            opacity: 0.7;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>🌙 Selamat Hari Raya Idul Fitri 🌙</h1>
+
+    <div class="card">
+        <p>
+            Di hari yang suci ini, saya ingin mengucapkan:
+        </p>
+
+        <p>
+            Mohon maaf lahir dan batin 🙏<br><br>
+
+            Jika selama ini ada kata yang menyakitkan,<br>
+            sikap yang kurang berkenan,<br>
+            maupun perbuatan yang tidak disengaja,<br>
+            saya dengan tulus memohon maaf.<br><br>
+
+            Semoga kita semua kembali suci seperti hati yang bersih,<br>
+            dan diberikan keberkahan di hari yang fitri ini ✨
+        </p>
+    </div>
+
+    <button onclick="tampilPesan()">Klik untuk pesan tambahan</button>
+
+    <div id="pesanTambahan" class="hidden">
+         Terima kasih saudara, teman maupun keluarga yang sudah menjadi bagian dari hidup saya<br>
+        Semoga silaturahmi kita tetap terjaga selamanya 🤝
+    </div>
+
+    <div class="card">
+        <p>
+            Taqabbalallahu minna wa minkum<br>
+            Shiyamana wa shiyamakum<br><br>
+
+            Semoga Allah menerima amal ibadah kita semua 🤲
+        </p>
+    </div>
+
+    <footer>
+        <h3>Dibuat oleh Muhammad Hobir Sastrawan</h3>
+    </footer>
+</div>
+
+<script>
+function tampilPesan() {
+    var pesan = document.getElementById("pesanTambahan");
+    pesan.style.display = "block";
+}
+</script>
+
+</body>
+</html>
